@@ -25,9 +25,9 @@ function performOperation(num1, operator, num2) {
     return result;
 }
 
-const num1 = 2;
+const num1 = "12";
 const operator = '-';
-const num2 = 4;
+const num2 = "4";
 
 const calculationResult = performOperation(num1, operator, num2);
 console.log(`Result: ${calculationResult}`);

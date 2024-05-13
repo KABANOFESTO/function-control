@@ -14,6 +14,6 @@ const fibonnacci = n => {
         return fibArray[n - 1];
     }
 }
-const numbr = -2;
+const numbr = 7;
 const result = fibonnacci(numbr);
 console.log(result);
