@@ -1,16 +1,13 @@
-const reverseWordsWithPunctuation= function reverseWordsWithPunctuation(inputString) {
-    const wordsWithPunctuation = inputString.match(/\w+|[^\w\s]/g);
-  
-    if (!wordsWithPunctuation) {
-      return inputString; // No words found
-    }
-  
-    return wordsWithPunctuation.reverse().join(' ');
+const revrseWordsWithPunctuation = (inputString) => {
+  const wordWithPanctuation = inputString.match(/\w+|[^\w\s]/g);
+
+  if (!wordWithPanctuation) {
+    return inputString;
   }
-  
-  // Example usage:
-  const inputString = "Hello, world! How are you?";
-  const reversedResult = reverseWordsWithPunctuation(inputString);
-  
-  console.log(reversedResult);
-  
+  return wordWithPanctuation.reverse().join(' ');
+}
+
+const inputString = "Hello, world! How are you?";
+const reversedResult = revrseWordsWithPunctuation(inputString);
+
+console.log(reversedResult);

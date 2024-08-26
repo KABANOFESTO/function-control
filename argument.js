@@ -1,7 +1,6 @@
-
-function performOperation(num1, operator, num2) {
+const perfomOperation = (num1, operator, num2) => {
     if (isNaN(num1) || isNaN(num2)) {
-        return "Invalid input: Please enter valid numbers.";
+        return "Invalid input: Please enter valid number";
     }
     let result;
 
@@ -21,13 +20,12 @@ function performOperation(num1, operator, num2) {
         default:
             result = "Invalid operator!";
     }
-
     return result;
 }
+const num1 = 12;
+const operator = '+';
+const num2 = 4;
 
-const num1 = "12";
-const operator = '-';
-const num2 = "4";
-
-const calculationResult = performOperation(num1, operator, num2);
+const calculationResult = perfomOperation(num1, operator, num2);
 console.log(`Result: ${calculationResult}`);
+
